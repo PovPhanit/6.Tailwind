@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khmer:wght@600&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<br>
+    <!-- columns-num : put columns  -->
+    <!-- w-num : width -->
+    <!-- h-num : height -->
+    <!-- aspect-square : size square  -->
+    <!-- aspect-video : size 16\9  -->
+    <!-- break-after-column : for pdach after line  -->
+    <!-- p-num : padding  -->
+    <!-- box-decoration-clone : not cut padding  -->
+    <!-- box-decoration-slice : cut padding  -->
+    <!-- box-border : box-sizing:border-box; -->
+    <!-- box-content : box-sizing : content-box; -->
+    <!-- m-num : margin -->
+    <!-- inline : display:inline -->
+    <!-- inline-block : display:inline-block -->
+    <!-- block :display : block  -->
+    <!-- float-exp : float  -->
+    <!-- clear-exp : clear  -->
+    <!-- object-exp : object-fit  -->
+    <!-- overflow-exp : overflow  -->
+    <!-- expPossition-num : possition  -->
+    <!-- expVisibility : visibility  -->
+    <!-- z-num : z-index  -->
+    <!-- space-x-num : margin-right  -->
+    <!-- space-y-num : margin-bottom  -->
+    
+
+    <!-- text-num : font-size , text-align , color  -->
+    <!-- italic or not italic : font-style  -->
+    <!-- font-exp : font-weight  -->
+    <!-- tracking-exp : letter-spacing  -->
+    <!-- leading-num : line-height  -->
+    <!-- (unline, overline , line-through , no-underline) : text-decoration  -->
+
+
+    <!-- list-image-[url(.png)] : list-style-image : img before list  --> 1
+    <!-- list-image-none : list-style-image  -->
+    <!-- list-exp : list-style-position : for justify list --> 2
+    <!-- decoration-exp : text-decoration-color , text-decoration-style , text-decoration-thickness --> 3
+    <!-- underline-offset-num : text-decoration-offset : komleat ruler --> 4
+    <!-- (upercase , lowercase , capitalize) : text-transform  -->
+    <!-- indent-num : text-indent  -->
+    <!-- align-exp : vertical-align  -->
+    <!-- whitespace-exp : white-space : for space alot of text by typing  --> 5
+
+
+    <!-- bg-exp : background-attachment , background-repeat , background-size -->
+    <!-- bg-clip-exp : background-clip  -->
+    <!-- bg-color : background-color  -->
+    <!-- bg-origin-exp : background-origin : set size background border padding content  --> 6 
+    <!-- bg-[center_top_1rem] : background-position  -->
+    <!-- bg-[url('.png')] : background-image  -->
+
+    <!-- =>border  -->
+    <!-- rounded-exp : border-radius  -->
+    <!-- border-num : border-width  -->
+    <!-- border-exp : border-color , border-style -->
+    <!-- outline-exp : outline-width , outline-color , outline-style -->7
+    <!-- outline-offset-num : outline-offset  -->8
+
+
+  <!-- =>effects  -->
+  <!-- shadow-exp : box-shadow  -->
+  <!-- shadow-exp : --tw-shadow-color   -->9
+  <!-- opacity-num : opacity  -->
+  <!-- mix-blend-exp : mix-blend-mode : like photoshop -->10
+  <!-- bg-blend-exp : background-blend-mode : like photoshop -->11
+
+  
+
+  <!-- =>tables  -->
+  <!-- border-exp : border-collapse  -->
+  <!-- border-spacing-exp : border-spacing  --> 12
+  <!-- caption-exp : caption-side  --> 13
+  <!-- table-exp : table-layout  -->  14
+
+
+    <!-- =>filter  --> 15
+  <!-- blur-exp : filter : blur(..)  --> 
+  <!-- brightness-exp : filter:brightness()  -->
+  <!-- contrast-exp : filter : contrast()  -->
+  <!-- drop-shadow-exp : filter : drop-shadow(...)  --> 
+  <!-- grayscale-exp : filter : grayscale(..%)  -->
+  <!-- invert-exp : filter: invert()  -->
+  <!-- saturate-exp : filter:saturate()   -->
+  <!-- backdrop-blur-exp : backdrop-filter:blur(),brightness(),contrast() ,invert(),grayscale(),saturate : show it on pic  -->
+
+
+    <!-- =>transforms  -->
+  <!-- scale-num : transform:scale()  -->
+  <!-- rotate-num : transform:rotate()  -->
+  <!-- translate-x-num : transform:translateX()  -->
+  <!-- skew-x-num : transform:skewX()  -->
+
+
+    <!-- =>transition and animation  -->
+  <!-- transition-all : tansition-property  -->
+  <!-- duration-num : transition-duration  -->
+  <!-- ease-(linear,in,out,in-out) : transition-timing-function  -->
+  <!-- delay-num : transition-delay  -->
+  <!-- animate-spin : for spin infinite  -->
+  <!-- animate-ping : for ping boom infinite -->
+  <!-- animate-bounce : for transition y infinite -->
+
+    <!-- =>Interactivity -->
+  <!-- accent-color : acent-color : for color box check  --> 16
+  <!-- cursor-exp : cursor  -->
+  <!-- caret-color : caret-color : color bg when input box  --> 17
+  <!-- scroll-smooth : scroll-behavior : for scroll smoth in body  -->18
+
+    <!-- =>flex  -->
+    <!-- flex : display : flex  -->
+    <!-- basis : flex-basis  -->
+    <!-- flex-exp : flex-direction  , flex-wrap -->
+    <!-- justify-center : justify-content  -->
+    <!-- justify-items-exp : for control items  -->
+    <!-- items-exp : align-items  -->
+    <!-- content-exp : align-content  -->
+    <!-- place-content-exp : justify-content ,align-content  -->
+    <!-- place-items-exp : justify-content ,align-content for control items  -->
+
+
+
+    <!-- justify-self-exp : for control items child -->
+    <!-- self-exp : align-self for child-->
+    <!-- grow-num : flex-grow increase size obj -->
+    <!-- order-num : order   -->
+    <!-- place-self-exp : justify-content ,align-content for control one items  --> 
+    
+    
+    
+
+
+
+
+    <!-- study grid  -->
+    <!-- grid : display :grid  -->
+    <!-- grid-cols-num : grid-template-columns  -->
+    <!-- grid-rows-num : grid-template-rows  -->    
+    <!-- gap-num : grid-gap  -->
+    <!-- row-span or cols-span : for melt -->
+    <!-- auto-cols-exp : grid auto rows  -->
+
+      <!-- =>svg  -->
+  <!-- fill-color : fill : for fill in icon  -->19
+  <!-- stroke-color  : stroke : for color outline icon  -->20
+  <!-- stroke-num : stroke-width : komras border icon  -->21
+
+    <!-- hover:properties : for hover properties  -->
+    <!-- container(sm,md,..):properties : for responsive  -->
+    <!-- bg-gradient-to-exp , from-color , vai-color to-color : for gradient  -->
+    expMargin :
+    <div class="sm:columns-1 md:columns-2 lg:columns-3">
+        <img class="w-full aspect-square " src="2021-03-24_16-25-30_UTC_profile_pic.jpg" />
+        <img class="w-full aspect-square " src="2021-03-25_13-33-23_UTC_profile_pic.jpg" />
+        <img class="w-full aspect-square " src="2023-08-20_03-28-05_UTC.jpg" />
+        <img class="w-full aspect-square " src="2021-03-24_16-25-30_UTC_profile_pic.jpg" />
+        <img class="w-full aspect-square " src="2021-03-25_13-33-23_UTC_profile_pic.jpg" />
+        <img class="w-full aspect-square " src="2023-08-20_03-28-05_UTC.jpg" />
+      </div>
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-before-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+      <hr></hr>
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-after-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+      <hr></hr>
+
+      <div class="columns-2">
+        <p>Well, let me tell you something, ...</p>
+        <p class="break-inside-avoid-column">Sure, go ahead, laugh...</p>
+        <p>Maybe we can live without...</p>
+        <p>Look. If you think this is...</p>
+      </div>
+
+      <span class="md:box-decoration-clone sm:box-decoration-slice bg-gradient-to-r from-indigo-600 to-pink-500 text-white text-upercase px-6 ...">
+        Hello<br />
+        World
+      </span>
+      <span class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-6 ...">
+        Hello<br />
+        World
+      </span><div class="box-border bg- h-32 w-32 p-4 border-4 ...">
+        <!-- ... -->
+      </div>
+      <div class="box-content h-32 w-32 p-4 border-4 ...">
+        <!-- ... -->
+      </div>
+      <div>
+        When controlling the flow of text, using the CSS property
+        <span class="inline">display: inline</span>
+        will cause the text inside the element to wrap normally.
+      
+        While using the property <span class="inline-block">display: inline-block</span>
+        will wrap the element to prevent the text inside from extending beyond its parent.
+      
+        Lastly, using the property <span class="block">display: block</span>
+        will put the element on its own line and fill its parent.
+      </div>
+
+      <div class="p-4">
+        <div class="flow-root ...">
+          <div class="my-4 ...">Well, let me tell you something, ...</div>
+        </div>
+        <div class="flow-root ...">
+          <div class="my-4 ...">Sure, go ahead, laugh if you want...</div>
+        </div>
+      </div>
+
+      <div class="w-[1700px] flex justify-center items-center">
+        <img src="2021-03-24_16-25-30_UTC_profile_pic.jpg">
+        <div>
+          <strong>Andrew Alfred</strong>
+          <span>Technical advisor</span>
+        </div>
+      </div>
+
+      <p>
+        Today I spent most of the day researching ways to ...
+        <span class="inline-flex items-baseline">
+          <img src="2021-03-24_16-25-30_UTC_profile_pic.jpg" alt="" class="self-center w-5 h-5 rounded-full mx-1" />
+          <span>Kramer</span>
+        </span>
+        keeps telling me there is no way to make it work, that ...
+      </p>
+
+      <!-- grid  -->
+      <div class="grid gap-4 grid-cols-3 grid-rows-3">
+        <span class="bg-blue-700">01</span>
+        <span class="bg-red-700">02</span>
+        <span class="bg-red-700">03</span>
+        <span class="bg-red-700">04</span>
+        <span class="bg-red-700">05</span>
+        <span class="bg-red-700">06</span>
+      </div>
+
+      <div class="table w-full ...">
+        <div class="table-header-group bg-green-700">
+          <div class="table-row">
+            <div class="table-cell text-left ...">Song</div>
+            <div class="table-cell text-left ...">Artist</div>
+            <div class="table-cell text-left ...">Year</div>
+          </div>
+        </div>
+        <div class="table-row-group">
+          <div class="table-row">
+            <div class="table-cell ...">The Sliding Mr. Bones (Next Stop, Pottersville)</div>
+            <div class="table-cell ...">Malcolm Lockyer</div>
+            <div class="table-cell ...">1961</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell ...">Witchy Woman</div>
+            <div class="table-cell ...">The Eagles</div>
+            <div class="table-cell ...">1972</div>
+          </div>
+          <div class="table-row">
+            <div class="table-cell ...">Shining Star</div>
+            <div class="table-cell ...">Earth, Wind, and Fire</div>
+            <div class="table-cell ...">1975</div>
+          </div>
+        </div>
+      </div>
+      <br></br>
+      <img class="w-5 float-right text-justify" src="2021-03-24_16-25-30_UTC_profile_pic.jpg">
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti temporibus fugit blanditiis nobis quod ratione et quibusdam odit culpa, magni autem maiores corporis placeat quae at exercitationem aliquid quos quas?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita laudantium qui fuga atque non distinctio maxime neque vero ad, ipsum quos suscipit nam nobis eum dolores harum asperiores dolorem ex.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam facilis aperiam nisi? Quam quas autem a non cupiditate dolores id nobis ipsam, repellat harum maxime architecto repudiandae dolorum, aliquam ad?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo dicta vel rem impedit nostrum, exercitationem, praesentium pariatur ullam quod, consequuntur distinctio? Recusandae esse libero tenetur harum quasi perferendis aspernatur alias.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore labore a culpa veniam, accusantium odit ut. Voluptate ullam perspiciatis quod, quasi nobis quaerat quia odit consequatur quas? Delectus, odio sint.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, similique ullam? Voluptate praesentium sequi qui accusantium, sint vel facere ea beatae, mollitia obcaecati minima? Sapiente fuga dolore dignissimos temporibus numquam!
+  </p>
+    <br></br>
+  <div class="isolate-auto">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptate cumque aliquid numquam deleniti voluptates, placeat aliquam fuga harum quod sed beatae dignissimos eligendi iusto doloribus soluta ex consequuntur alias!
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sit minima repudiandae, voluptas voluptatibus consectetur praesentium velit omnis cumque laudantium ullam perspiciatis illo. Molestias dolorem ea est dolor voluptates praesentium.
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. In illo maxime hic perspiciatis amet ad cupiditate explicabo, quisquam repellendus ipsum accusantium, impedit excepturi similique debitis fugiat, neque deleniti modi. Quas?
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus nostrum dignissimos voluptate culpa maxime ipsum! Sequi quisquam alias aliquid labore ex ea error, explicabo, deserunt, veritatis vel iste dolore nesciunt?
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta distinctio molestiae quidem accusamus veniam fugit necessitatibus deserunt aut incidunt explicabo! Odit eligendi, dicta ut vitae ipsa officiis temporibus quia ea!
+  </div>
+
+  <div class="flex bg-gradient-to-r from-yellow-300 via-blue-600 via-20% to-green-300 space-x-14 mt-11 ...">
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <div>03</div>
+  </div>
+
+  <p class="font-sansa text-[30px] font-bold tracking-tighter">The quick brown fox ...</p>
+  <p class="font-serif font-[1100px]">The quick brown fox ...</p>
+  <p class="font-mono">The quick brown fox ...</p>
+
+  <ul class="list-image-[url()] ...">
+    <li>5 cups chopped Porcini mushrooms</li>
+    <!-- ... -->
+  </ul>
+  <div class="flex justify-center w-[800px] -space-x-14">
+    <div class=" w-[200px] h-[200px] rounded-full bg-blue-400 ...">hello</div>
+    <div class="mix-blend-multiply w-[200px] h-[200px] rounded-full bg-pink-400 ..."> hi</div>
+  </div>
+  <div class="bg-red-600 ">
+  <img class="bg-red-400 rotate-45 ..." src="2021-03-24_16-25-30_UTC_profile_pic.jpg">
+</div>
+<input type="checkbox" class="accent-cyan-300" checked>
+
+  <p class="text-justify w-[400px]">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit earum asperiores unde soluta voluptate aliquam aliquid distinctio a, cupiditate quo fugiat pariatur optio expedita nemo velit ipsum autem iste illum!Loremlore Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro distinctio non quos eligendi cumque repellat sint et doloremque quidem omnis nobis, necessitatibus beatae rerum odit mollitia repellendus aut alias dolore?</p>
+  
+  
+  <div class="snap-x flex">
+    <div class="scroll-ml-6 snap-start ...">
+      <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="scroll-ml-6 snap-start ...">
+      <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="scroll-ml-6 snap-start ...">
+      <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="scroll-ml-6 snap-start ...">
+      <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="scroll-ml-6 snap-start ...">
+      <img src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+  </div>
+   
+  <div class="snap-x flex overflow-x-scroll ">
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1540206351-d6465b3ac5c1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1622890806166-111d7f6c7c97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1575424909138-46b05e5919ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    <div class="snap-center ...">
+      <img src="https://images.unsplash.com/photo-1559333086-b0a56225a93c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80" />
+    </div>
+    
+  </div>
+  <div>hello world</div>
+  
+<button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" data-dropdwon-target="#multi-dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+  </svg>
+  </button>
+  
+  <!-- Dropdown menu -->
+  <div id="multi-dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+      <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="multiLevelDropdownButton">
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+        </li>
+        <li>
+          <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dropdown<svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+    </svg></button>
+            <div id="doubleDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButton">
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Overview</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">My downloads</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Billing</a>
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Rewards</a>
+                </li>
+              </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+        </li>
+        <li>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+        </li>
+      </ul>
+  </div>
+  
+
+  <button id="dropdownDefaultButton" data-dropdwon-target="dropdown" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
+    
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 group-focus-block bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+    </div>
+    
+    
+
+<!-- Modal toggle -->
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+  Toggle modal
+</button>
+
+<!-- Main modal -->
+<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+        <!-- Modal content -->
+        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700" >
+            <!-- Modal header -->
+            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                    Terms of Service
+                </h3>
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                </p>
+            </div>
+            <!-- Modal footer -->
+            <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                <button data-modal-hide="default-modal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I accept</button>
+                <button data-modal-hide="default-modal" type="button" class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
